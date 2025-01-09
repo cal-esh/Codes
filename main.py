@@ -34,7 +34,7 @@ color_list = ['#000000',     # Black
               '#800080']     # Strong Purple
 
 def swing(t, delta_t, y, u, H, P, D, E, Y_normal, Y_fault):
-  """Simulate power generators swing dynamics."""
+  """Simulate power generators swing dynamics!"""
   N = len(y)//2
   u = np.zeros(N) if u is None else u
   Y_fault = Y_normal if Y_fault is None else Y_fault
